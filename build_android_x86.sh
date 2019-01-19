@@ -9,10 +9,10 @@ NDKF="--sysroot $NDK/platforms/android-$NDKABI/arch-x86"
 
 make clean
 make HOST_CC="gcc -m32" CROSS=$NDKP TARGET_SYS=Linux TARGET_FLAGS="$NDKF"
-cp ./libluajit.a ../../android/jni/libluajit.a
+cp ./libluajit.a ../../platform-android/jni/libluajit.a
 make clean
 
-cd ../../android
+cd ../../platform-android
 $NDK/ndk-build clean APP_ABI="armeabi-v7a,x86"
 $NDK/ndk-build APP_ABI="x86"
 cp libs/x86/libslua.so ../Plugins/Android/libs/x86
