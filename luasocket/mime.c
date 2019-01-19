@@ -654,7 +654,7 @@ static int eolprocess(int c, int last, const char *marker,
 \*-------------------------------------------------------------------------*/
 static int mime_global_eol(lua_State *L)
 {
-    int ctx = luaL_checkinteger(L, 1);
+    int ctx = (int) luaL_checkinteger(L, 1);
     size_t isize = 0;
     const char *input = luaL_optlstring(L, 2, NULL, &isize);
     const char *last = input + isize;
@@ -689,6 +689,7 @@ static size_t dot(int c, size_t state, luaL_Buffer *buffer)
         case '.':
             if (state == 2)
                 luaL_addchar(buffer, '.');
+            /* Falls through. */
         default:
             return 0;
     }
