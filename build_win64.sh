@@ -54,3 +54,5 @@ gcc -m64 -O2 -std=gnu99 -shared \
     -Wl,--whole-archive window/x86_64/libluajit.a -Wl,--no-whole-archive -static-libgcc -static-libstdc++
 
 cp window/x86_64/slua.dll Plugins/x64/slua.dll
+
+rm -rf window
