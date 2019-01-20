@@ -277,7 +277,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
-				ORGANIZATIONNAME = luzexi;
+				ORGANIZATIONNAME = ForeverNo.2;
 				TargetAttributes = {
 					8E013A7C1B9CA51E00F248D8 = {
 						CreatedOnToolsVersion = 6.4;

@@ -2,10 +2,8 @@
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 cd luajit-2.1.0-beta3
 
-
 LIPO="xcrun -sdk iphoneos lipo"
 STRIP="xcrun -sdk iphoneos strip"
-
 
 IXCODE=`xcode-select -print-path`
 ISDK=$IXCODE/Platforms/iPhoneOS.platform/Developer
@@ -59,5 +57,10 @@ lipo libsluav7.a -create libsluav7s.a libslua64.a libluajit-i386.a libluajit-x86
 #lipo libsluav7.a -create libsluav7s.a libslua64.a -output libslua.a
 
 cp libslua.a ../../platform-iOS/
+
+cd ../../platform-iOS/
+xcodebuild clean
+xcodebuild -configuration=Release
+cp -f ./build/Release-iphoneos/libslua.a ../Plugins/iOS/
 
 cd ..
