@@ -12,12 +12,14 @@ make clean
 make HOST_CC="gcc -m32" CROSS=$NDKP TARGET_SYS=Linux TARGET_FLAGS="$NDKF $NDKARCH"
 cp ./libluajit.a ../../platform-android/jni/libluajit.a
 make clean
+rm -rf libluajit.so luajit
 
 cd ../../platform-android
 $NDK/ndk-build clean APP_ABI="armeabi-v7a,x86"
 $NDK/ndk-build APP_ABI="armeabi-v7a"
 cp libs/armeabi-v7a/libslua.so ../Plugins/Android/libs/armeabi-v7a
 $NDK/ndk-build clean APP_ABI="armeabi-v7a,x86"
+rm -rf libs obj jni/*.a NUL
 
 cd ..
 
@@ -32,11 +34,13 @@ make clean
 make HOST_CC="gcc -m32" CROSS=$NDKP TARGET_SYS=Linux TARGET_FLAGS="$NDKF"
 cp ./libluajit.a ../../platform-android/jni/libluajit.a
 make clean
+rm -rf libluajit.so luajit
 
 cd ../../platform-android
 $NDK/ndk-build clean APP_ABI="armeabi-v7a,x86"
 $NDK/ndk-build APP_ABI="x86"
 cp libs/x86/libslua.so ../Plugins/Android/libs/x86
 $NDK/ndk-build clean APP_ABI="armeabi-v7a,x86"
+rm -rf libs obj jni/*.a NUL
 
 cd ..
