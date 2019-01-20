@@ -15,8 +15,10 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../
 
 LOCAL_CPPFLAGS := -O2
 LOCAL_CFLAGS :=  -O2 -std=gnu99
-LOCAL_SRC_FILES :=	../../slua.c \
+LOCAL_SRC_FILES :=  ../../slua.c \
                     ../../lpeg.c \
+                    ../../snapshot.c \
+                    ../../bit.c \
                     ../../cjson/strbuf.c \
                     ../../cjson/lua_cjson.c \
                     ../../cjson/fpconv.c \

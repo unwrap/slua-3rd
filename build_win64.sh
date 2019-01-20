@@ -15,6 +15,7 @@ gcc -m64 -O2 -std=gnu99 -shared \
     slua.c \
     lpeg.c \
     snapshot.c \
+    bit.c \
     cjson/strbuf.c \
     cjson/lua_cjson.c \
     cjson/fpconv.c \
