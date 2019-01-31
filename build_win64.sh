@@ -7,6 +7,7 @@ mingw32-make clean
 
 mingw32-make BUILDMODE=static CC="gcc -m64 -O2" XCFLAGS=-DLUAJIT_ENABLE_GC64
 cp src/libluajit.a ../window/x86_64/libluajit.a
+cp src/luajit.exe ../jit/win/x64/luajit.exe
 mingw32-make clean
 
 cd ..
