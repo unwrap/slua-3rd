@@ -59,3 +59,7 @@ mingw64运行 `build_win64.sh`，生成x64动态库。
 * lpeg
 
 [http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html](http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html)
+
+* kcp
+
+[https://github.com/skywind3000/kcp](https://github.com/skywind3000/kcp)

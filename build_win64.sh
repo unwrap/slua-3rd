@@ -16,6 +16,7 @@ cd ..
 gcc -m64 -O2 -std=gnu99 -shared \
     slua.c \
     lpeg.c \
+    kcp.c \
     snapshot.c \
     bit.c \
     cjson/strbuf.c \
