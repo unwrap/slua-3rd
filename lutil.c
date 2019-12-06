@@ -74,7 +74,11 @@ int luaopen_lutil(lua_State *L) {
         {NULL, NULL},
     };
 
+#if LUA_VERSION_NUM < 502
+    luaL_register(L, "lutil", libs);
+#else
     luaL_newlib(L, libs);
+#endif
     return 1;
 }
 

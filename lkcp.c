@@ -253,7 +253,11 @@ int luaopen_lkcp(lua_State* L) {
     lua_setmetatable(L, -2);
     lua_setfield(L, LUA_REGISTRYINDEX, "kcp_lua_recv_buffer");
 
+#if LUA_VERSION_NUM < 502
+    luaL_register(L, "lkcp", l_methods);
+#else
     luaL_newlib(L, l_methods);
+#endif
 
     return 1;
 }
