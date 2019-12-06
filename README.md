@@ -63,3 +63,4 @@ mingw64运行 `build_win64.sh`，生成x64动态库。
 * kcp
 
 [https://github.com/skywind3000/kcp](https://github.com/skywind3000/kcp)
+[https://github.com/linxiaolong/lua-kcp](https://github.com/linxiaolong/lua-kcp)

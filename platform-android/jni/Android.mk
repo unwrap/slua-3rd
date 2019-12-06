@@ -17,7 +17,9 @@ LOCAL_CPPFLAGS := -O2
 LOCAL_CFLAGS :=  -O2 -std=gnu99
 LOCAL_SRC_FILES :=  ../../slua.c \
                     ../../lpeg.c \
-                    ../../kcp.c \
+                    ../../ikcp.c \
+                    ../../lkcp.c \
+                    ../../lutil.c \
                     ../../snapshot.c \
                     ../../bit.c \
                     ../../cjson/strbuf.c \
