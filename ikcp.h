@@ -367,7 +367,7 @@ extern "C" {
 	KCPDLL IUINT32 ikcp_check(const ikcpcb *kcp, IUINT32 current);
 
 	// when you received a low level packet (eg. UDP packet), call it
-	KCPDLL int ikcp_input(ikcpcb *kcp, const char *data, long size);
+	KCPDLL int ikcp_input(ikcpcb *kcp, const char *data, int offset, int size);
 
 	// flush pending data
 	KCPDLL void ikcp_flush(ikcpcb *kcp);
