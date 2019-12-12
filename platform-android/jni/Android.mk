@@ -22,6 +22,7 @@ LOCAL_SRC_FILES :=  ../../slua.c \
                     ../../lutil.c \
                     ../../snapshot.c \
                     ../../bit.c \
+                    ../../pb.c \
                     ../../cjson/strbuf.c \
                     ../../cjson/lua_cjson.c \
                     ../../cjson/fpconv.c \
@@ -38,20 +39,6 @@ LOCAL_SRC_FILES :=  ../../slua.c \
                     ../../luasocket/timeout.c \
                     ../../luasocket/udp.c \
                     ../../luasocket/usocket.c \
-                    ../../pbc/src/alloc.c \
-                    ../../pbc/src/array.c \
-                    ../../pbc/src/bootstrap.c \
-                    ../../pbc/src/context.c \
-                    ../../pbc/src/decode.c \
-                    ../../pbc/src/map.c \
-                    ../../pbc/src/pattern.c \
-                    ../../pbc/src/proto.c \
-                    ../../pbc/src/register.c \
-                    ../../pbc/src/rmessage.c \
-                    ../../pbc/src/stringpool.c \
-                    ../../pbc/src/varint.c \
-                    ../../pbc/src/wmessage.c \
-                    ../../pbc/binding/lua/pbc-lua.c
                      
 LOCAL_WHOLE_STATIC_LIBRARIES += libluajit
 include $(BUILD_SHARED_LIBRARY)
