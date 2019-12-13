@@ -26,21 +26,11 @@
 		0EE3CD9C21F4823B00EAB9DD /* lua_cjson.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CD9721F4823B00EAB9DD /* lua_cjson.c */; };
 		0EE3CD9D21F4823B00EAB9DD /* strbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CD9821F4823B00EAB9DD /* strbuf.c */; };
 		0EE3CD9E21F4823B00EAB9DD /* fpconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CD9A21F4823B00EAB9DD /* fpconv.c */; };
-		0EE3CDB621F4825100EAB9DD /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDA121F4824F00EAB9DD /* decode.c */; };
-		0EE3CDB721F4825100EAB9DD /* bootstrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDA221F4824F00EAB9DD /* bootstrap.c */; };
-		0EE3CDB821F4825100EAB9DD /* proto.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDA321F4824F00EAB9DD /* proto.c */; };
-		0EE3CDB921F4825100EAB9DD /* stringpool.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDA521F4825000EAB9DD /* stringpool.c */; };
-		0EE3CDBA21F4825100EAB9DD /* wmessage.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDA621F4825000EAB9DD /* wmessage.c */; };
-		0EE3CDBB21F4825100EAB9DD /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDA921F4825000EAB9DD /* map.c */; };
-		0EE3CDBC21F4825100EAB9DD /* pattern.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDAA21F4825000EAB9DD /* pattern.c */; };
-		0EE3CDBD21F4825100EAB9DD /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDAC21F4825000EAB9DD /* array.c */; };
-		0EE3CDBE21F4825100EAB9DD /* varint.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDAF21F4825000EAB9DD /* varint.c */; };
-		0EE3CDBF21F4825100EAB9DD /* register.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDB021F4825000EAB9DD /* register.c */; };
-		0EE3CDC021F4825100EAB9DD /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDB121F4825100EAB9DD /* alloc.c */; };
-		0EE3CDC121F4825100EAB9DD /* rmessage.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDB321F4825100EAB9DD /* rmessage.c */; };
-		0EE3CDC221F4825100EAB9DD /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDB521F4825100EAB9DD /* context.c */; };
-		0EE3CDC521F4826100EAB9DD /* pbc-lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDC421F4826100EAB9DD /* pbc-lua.c */; };
 		0EE3CDC721F4827700EAB9DD /* snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDC621F4827600EAB9DD /* snapshot.c */; };
+		0EE3CDD723A3E08400EAB9DD /* bit.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDD623A3E08400EAB9DD /* bit.c */; };
+		0EE3CDD923A3E08A00EAB9DD /* lkcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDD823A3E08A00EAB9DD /* lkcp.c */; };
+		0EE3CDDC23A3E09300EAB9DD /* ikcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDDB23A3E09200EAB9DD /* ikcp.c */; };
+		0EE3CDDE23A3E09700EAB9DD /* pb.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3CDDD23A3E09700EAB9DD /* pb.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,32 +82,13 @@
 		0EE3CD9921F4823B00EAB9DD /* fpconv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fpconv.h; path = ../cjson/fpconv.h; sourceTree = "<group>"; };
 		0EE3CD9A21F4823B00EAB9DD /* fpconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fpconv.c; path = ../cjson/fpconv.c; sourceTree = "<group>"; };
 		0EE3CD9B21F4823B00EAB9DD /* strbuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = strbuf.h; path = ../cjson/strbuf.h; sourceTree = "<group>"; };
-		0EE3CD9F21F4824F00EAB9DD /* stringpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stringpool.h; path = ../pbc/src/stringpool.h; sourceTree = "<group>"; };
-		0EE3CDA021F4824F00EAB9DD /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = array.h; path = ../pbc/src/array.h; sourceTree = "<group>"; };
-		0EE3CDA121F4824F00EAB9DD /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = decode.c; path = ../pbc/src/decode.c; sourceTree = "<group>"; };
-		0EE3CDA221F4824F00EAB9DD /* bootstrap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bootstrap.c; path = ../pbc/src/bootstrap.c; sourceTree = "<group>"; };
-		0EE3CDA321F4824F00EAB9DD /* proto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = proto.c; path = ../pbc/src/proto.c; sourceTree = "<group>"; };
-		0EE3CDA421F4824F00EAB9DD /* proto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = proto.h; path = ../pbc/src/proto.h; sourceTree = "<group>"; };
-		0EE3CDA521F4825000EAB9DD /* stringpool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stringpool.c; path = ../pbc/src/stringpool.c; sourceTree = "<group>"; };
-		0EE3CDA621F4825000EAB9DD /* wmessage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wmessage.c; path = ../pbc/src/wmessage.c; sourceTree = "<group>"; };
-		0EE3CDA721F4825000EAB9DD /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map.h; path = ../pbc/src/map.h; sourceTree = "<group>"; };
-		0EE3CDA821F4825000EAB9DD /* alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = alloc.h; path = ../pbc/src/alloc.h; sourceTree = "<group>"; };
-		0EE3CDA921F4825000EAB9DD /* map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = map.c; path = ../pbc/src/map.c; sourceTree = "<group>"; };
-		0EE3CDAA21F4825000EAB9DD /* pattern.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pattern.c; path = ../pbc/src/pattern.c; sourceTree = "<group>"; };
-		0EE3CDAB21F4825000EAB9DD /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pattern.h; path = ../pbc/src/pattern.h; sourceTree = "<group>"; };
-		0EE3CDAC21F4825000EAB9DD /* array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = array.c; path = ../pbc/src/array.c; sourceTree = "<group>"; };
-		0EE3CDAD21F4825000EAB9DD /* descriptor.pbc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = descriptor.pbc.h; path = ../pbc/src/descriptor.pbc.h; sourceTree = "<group>"; };
-		0EE3CDAE21F4825000EAB9DD /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = context.h; path = ../pbc/src/context.h; sourceTree = "<group>"; };
-		0EE3CDAF21F4825000EAB9DD /* varint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = varint.c; path = ../pbc/src/varint.c; sourceTree = "<group>"; };
-		0EE3CDB021F4825000EAB9DD /* register.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = register.c; path = ../pbc/src/register.c; sourceTree = "<group>"; };
-		0EE3CDB121F4825100EAB9DD /* alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = alloc.c; path = ../pbc/src/alloc.c; sourceTree = "<group>"; };
-		0EE3CDB221F4825100EAB9DD /* varint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = varint.h; path = ../pbc/src/varint.h; sourceTree = "<group>"; };
-		0EE3CDB321F4825100EAB9DD /* rmessage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rmessage.c; path = ../pbc/src/rmessage.c; sourceTree = "<group>"; };
-		0EE3CDB421F4825100EAB9DD /* bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bootstrap.h; path = ../pbc/src/bootstrap.h; sourceTree = "<group>"; };
-		0EE3CDB521F4825100EAB9DD /* context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = context.c; path = ../pbc/src/context.c; sourceTree = "<group>"; };
-		0EE3CDC321F4825800EAB9DD /* pbc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pbc.h; path = ../pbc/pbc.h; sourceTree = "<group>"; };
-		0EE3CDC421F4826100EAB9DD /* pbc-lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pbc-lua.c"; path = "../pbc/binding/lua/pbc-lua.c"; sourceTree = "<group>"; };
 		0EE3CDC621F4827600EAB9DD /* snapshot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = snapshot.c; path = ../snapshot.c; sourceTree = "<group>"; };
+		0EE3CDD623A3E08400EAB9DD /* bit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bit.c; path = ../bit.c; sourceTree = "<group>"; };
+		0EE3CDD823A3E08A00EAB9DD /* lkcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lkcp.c; path = ../lkcp.c; sourceTree = "<group>"; };
+		0EE3CDDA23A3E08E00EAB9DD /* ikcp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ikcp.h; path = ../ikcp.h; sourceTree = "<group>"; };
+		0EE3CDDB23A3E09200EAB9DD /* ikcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ikcp.c; path = ../ikcp.c; sourceTree = "<group>"; };
+		0EE3CDDD23A3E09700EAB9DD /* pb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pb.c; path = ../pb.c; sourceTree = "<group>"; };
+		0EE3CDDF23A3E09B00EAB9DD /* pb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pb.h; path = ../pb.h; sourceTree = "<group>"; };
 		8E013A7D1B9CA51E00F248D8 /* libslua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libslua.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -175,38 +146,6 @@
 			name = misc;
 			sourceTree = "<group>";
 		};
-		0EE3CD9121F4820800EAB9DD /* pbc */ = {
-			isa = PBXGroup;
-			children = (
-				0EE3CDC421F4826100EAB9DD /* pbc-lua.c */,
-				0EE3CDC321F4825800EAB9DD /* pbc.h */,
-				0EE3CDB121F4825100EAB9DD /* alloc.c */,
-				0EE3CDA821F4825000EAB9DD /* alloc.h */,
-				0EE3CDAC21F4825000EAB9DD /* array.c */,
-				0EE3CDA021F4824F00EAB9DD /* array.h */,
-				0EE3CDA221F4824F00EAB9DD /* bootstrap.c */,
-				0EE3CDB421F4825100EAB9DD /* bootstrap.h */,
-				0EE3CDB521F4825100EAB9DD /* context.c */,
-				0EE3CDAE21F4825000EAB9DD /* context.h */,
-				0EE3CDA121F4824F00EAB9DD /* decode.c */,
-				0EE3CDAD21F4825000EAB9DD /* descriptor.pbc.h */,
-				0EE3CDA921F4825000EAB9DD /* map.c */,
-				0EE3CDA721F4825000EAB9DD /* map.h */,
-				0EE3CDAA21F4825000EAB9DD /* pattern.c */,
-				0EE3CDAB21F4825000EAB9DD /* pattern.h */,
-				0EE3CDA321F4824F00EAB9DD /* proto.c */,
-				0EE3CDA421F4824F00EAB9DD /* proto.h */,
-				0EE3CDB021F4825000EAB9DD /* register.c */,
-				0EE3CDB321F4825100EAB9DD /* rmessage.c */,
-				0EE3CDA521F4825000EAB9DD /* stringpool.c */,
-				0EE3CD9F21F4824F00EAB9DD /* stringpool.h */,
-				0EE3CDAF21F4825000EAB9DD /* varint.c */,
-				0EE3CDB221F4825100EAB9DD /* varint.h */,
-				0EE3CDA621F4825000EAB9DD /* wmessage.c */,
-			);
-			name = pbc;
-			sourceTree = "<group>";
-		};
 		0EE3CD9221F4820E00EAB9DD /* cjson */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,9 +170,14 @@
 		8E013A741B9CA51E00F248D8 = {
 			isa = PBXGroup;
 			children = (
+				0EE3CDD623A3E08400EAB9DD /* bit.c */,
+				0EE3CDD823A3E08A00EAB9DD /* lkcp.c */,
+				0EE3CDDB23A3E09200EAB9DD /* ikcp.c */,
+				0EE3CDDA23A3E08E00EAB9DD /* ikcp.h */,
+				0EE3CDDD23A3E09700EAB9DD /* pb.c */,
+				0EE3CDDF23A3E09B00EAB9DD /* pb.h */,
 				0EE3CD9321F4821500EAB9DD /* lpeg */,
 				0EE3CD9221F4820E00EAB9DD /* cjson */,
-				0EE3CD9121F4820800EAB9DD /* pbc */,
 				0EE3CD9021F4820100EAB9DD /* misc */,
 				0EE3CD5221F4814D00EAB9DD /* luasocket */,
 				0EE3CD5021F480C200EAB9DD /* libslua.a */,
@@ -306,37 +250,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EE3CDBF21F4825100EAB9DD /* register.c in Sources */,
 				0EE3CD7E21F4816200EAB9DD /* usocket.c in Sources */,
 				0EE3CD7D21F4816200EAB9DD /* auxiliar.c in Sources */,
-				0EE3CDBE21F4825100EAB9DD /* varint.c in Sources */,
 				0EE3CD8A21F4816200EAB9DD /* except.c in Sources */,
+				0EE3CDD923A3E08A00EAB9DD /* lkcp.c in Sources */,
 				0EE3CD8C21F4816200EAB9DD /* tcp.c in Sources */,
-				0EE3CDB921F4825100EAB9DD /* stringpool.c in Sources */,
+				0EE3CDDE23A3E09700EAB9DD /* pb.c in Sources */,
 				0EE3CD4F21F4792100EAB9DD /* slua.c in Sources */,
 				0EE3CD8F21F4816200EAB9DD /* luasocket.c in Sources */,
-				0EE3CDB721F4825100EAB9DD /* bootstrap.c in Sources */,
+				0EE3CDDC23A3E09300EAB9DD /* ikcp.c in Sources */,
 				0EE3CD8021F4816200EAB9DD /* udp.c in Sources */,
-				0EE3CDC021F4825100EAB9DD /* alloc.c in Sources */,
-				0EE3CDBC21F4825100EAB9DD /* pattern.c in Sources */,
 				0EE3CD8621F4816200EAB9DD /* mime.c in Sources */,
-				0EE3CDC121F4825100EAB9DD /* rmessage.c in Sources */,
-				0EE3CDB821F4825100EAB9DD /* proto.c in Sources */,
 				0EE3CD8221F4816200EAB9DD /* options.c in Sources */,
-				0EE3CDBB21F4825100EAB9DD /* map.c in Sources */,
+				0EE3CDD723A3E08400EAB9DD /* bit.c in Sources */,
 				0EE3CD9E21F4823B00EAB9DD /* fpconv.c in Sources */,
 				0EE3CD8421F4816200EAB9DD /* select.c in Sources */,
 				0EE3CD9C21F4823B00EAB9DD /* lua_cjson.c in Sources */,
-				0EE3CDBA21F4825100EAB9DD /* wmessage.c in Sources */,
 				0EE3CD9621F4823000EAB9DD /* lpeg.c in Sources */,
 				0EE3CD8E21F4816200EAB9DD /* inet.c in Sources */,
 				0EE3CD7C21F4816200EAB9DD /* buffer.c in Sources */,
-				0EE3CDC221F4825100EAB9DD /* context.c in Sources */,
-				0EE3CDBD21F4825100EAB9DD /* array.c in Sources */,
-				0EE3CDB621F4825100EAB9DD /* decode.c in Sources */,
 				0EE3CD8321F4816200EAB9DD /* timeout.c in Sources */,
 				0EE3CD9D21F4823B00EAB9DD /* strbuf.c in Sources */,
-				0EE3CDC521F4826100EAB9DD /* pbc-lua.c in Sources */,
 				0EE3CD8821F4816200EAB9DD /* io.c in Sources */,
 				0EE3CDC721F4827700EAB9DD /* snapshot.c in Sources */,
 			);

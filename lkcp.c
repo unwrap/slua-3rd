@@ -26,8 +26,8 @@
 #include <stdint.h>
 #include <string.h>
 
-#include <lua.h>
-#include <lauxlib.h>
+#include "lua.h"
+#include "lauxlib.h"
 
 #include "ikcp.h"
 
