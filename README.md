@@ -44,9 +44,9 @@ mingw64运行 `build_win64.sh`，生成x64动态库。
 
 ## 3rd library
 
-* pbc
+* lua-protobuf
 
-[https://github.com/cloudwu/pbc](https://github.com/cloudwu/pbc)
+[https://github.com/starwing/lua-protobuf](https://github.com/starwing/lua-protobuf)
 
 * luasocket
 
