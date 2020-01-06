@@ -14,11 +14,18 @@ cp ./libluajit.a ../../platform-android/jni/libluajit.a
 make clean
 rm -rf libluajit.so luajit
 
-cd ../../platform-android
-$NDK/build/ndk-build clean APP_ABI="armeabi-v7a,x86,arm64-v8a" APP_PLATFORM=android-21
-$NDK/build/ndk-build APP_ABI="arm64-v8a" APP_PLATFORM=android-21
-cp libs/arm64-v8a/libslua.so ../Plugins/Android/libs/arm64-v8a
-$NDK/ndk-build clean APP_ABI="armeabi-v7a,x86,arm64-v8a"
+if [[ "$OSTYPE" == "msys" ]]; then
+    cd ../../
+    # can't pass $NDK to bat
+    cmd /c "link_arm64.bat"
+else
+    cd ../../platform-android
+    $NDK/ndk-build clean APP_ABI="armeabi-v7a,x86,arm64-v8a" APP_PLATFORM=android-21
+    $NDK/ndk-build APP_ABI="arm64-v8a" APP_PLATFORM=android-21
+    cp libs/arm64-v8a/libtolua.so ../Plugins/Android/libs/arm64-v8a
+    $NDK/ndk-build clean APP_ABI="armeabi-v7a,x86,arm64-v8a" APP_PLATFORM=android-21
+fi
+
 rm -rf libs obj jni/*.a NUL
 
 cd ..
