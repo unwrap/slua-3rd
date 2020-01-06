@@ -18,14 +18,14 @@ if [[ "$OSTYPE" == "msys" ]]; then
     cd ../../
     # can't pass $NDK to bat
     cmd /c "link_arm64.bat"
+    rm -rf platform-android/libs platform-android/obj platform-android/jni/*.a NUL
 else
     cd ../../platform-android
     $NDK/ndk-build clean APP_ABI="armeabi-v7a,x86,arm64-v8a" APP_PLATFORM=android-21
     $NDK/ndk-build APP_ABI="arm64-v8a" APP_PLATFORM=android-21
     cp libs/arm64-v8a/libtolua.so ../Plugins/Android/libs/arm64-v8a
     $NDK/ndk-build clean APP_ABI="armeabi-v7a,x86,arm64-v8a" APP_PLATFORM=android-21
+    rm -rf libs obj jni/*.a NUL
 fi
-
-rm -rf libs obj jni/*.a NUL
 
 cd ..
