@@ -6,7 +6,9 @@
 
 [MacOSX](https://dl.google.com/android/repository/android-ndk-r10e-darwin-x86_64.zip)
 
-[Win64-bit](https://dl.google.com/android/repository/android-ndk-r10e-windows-x86_64.zip)
+[Win－android-ndk-r10e](https://dl.google.com/android/repository/android-ndk-r10e-windows-x86_64.zip)
+
+[Win－android-ndk-r15c](https://dl.google.com/android/repository/android-ndk-r15c-windows-x86_64.zip)
 
 ### Windows平台
 
@@ -35,8 +37,9 @@ mingw64运行 `build_win64.sh`，生成x64动态库。
 
 * android
 
-需要先下载NDK并配置好环境变量，可以在Windows下编译也可以在macOS下编译，生成so文件。
-在Windows下编译，需要用mingw32来运行 `build_android_win.sh`，生成arm和x86架构的so文件。在maxOS下则运行 `build_android.sh`。两个脚本只需运行其中一个即可。
+需要先下载NDK并配置好环境变量。
+mingw32运行 `build_android_win.sh`，生成arm和x86架构的so文件。
+mingw64运行`build_arm64.sh`,生成arm64架构的so文件。
 
 * mac && iOS
 
