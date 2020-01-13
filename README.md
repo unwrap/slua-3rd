@@ -66,4 +66,8 @@ mingw64运行`build_arm64.sh`,生成arm64架构的so文件。
 * kcp
 
 [https://github.com/skywind3000/kcp](https://github.com/skywind3000/kcp)
-[https://github.com/linxiaolong/lua-kcp](https://github.com/linxiaolong/lua-kcp)
+[https://github.com/linxiaolong/lua-kcp](https://github.com/linxiaolong/lua-kcp)  
+  
+* xxtea
+
+[https://github.com/xxtea/xxtea-lua](https://github.com/xxtea/xxtea-lua)
