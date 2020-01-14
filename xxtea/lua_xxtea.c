@@ -22,7 +22,7 @@ static int encrypt(lua_State *L) {
 	unsigned char *result;
 	const char *data;
 	const char *key = "463131984";
-	size_t data_len, key_len, out_len;
+	size_t data_len, out_len;
 
 	data = luaL_checklstring(L, 1, &data_len);
 	result = xxtea_encrypt(data, data_len, key, &out_len);
@@ -41,7 +41,7 @@ static int decrypt(lua_State *L) {
 	unsigned char *result;
 	const char *data;
 	const char *key = "463131984";
-	size_t data_len, key_len, out_len;
+	size_t data_len, out_len;
 
 	data = luaL_checklstring(L, 1, &data_len);
 	result = xxtea_decrypt(data, data_len, key, &out_len);
