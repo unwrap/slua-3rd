@@ -65,12 +65,33 @@ static int _uint322netbytes(lua_State* L){
     return 1;
 }
 
+static int _encrypt_key(lua_State *L) {
+    const char *key;
+    const char *self_key = "|463131984";
+    size_t key_len;
+    key  = luaL_checklstring(L, 1, &key_len);
+    size_t out_len = key_len + strlen(self_key);
+    char *result = (char *)malloc(out_len);
+    strcpy(result, key);
+    strcat(result, self_key);
+
+    if(result == NULL){
+        lua_pushnil(L);
+    }else{
+        lua_pushlstring(L, (const char *)result, out_len);
+        free(result);
+    }
+
+    return 1;
+}
+
 int luaopen_lutil(lua_State *L) {
     luaL_Reg libs[] = {
         {"gettimeofday", _l_gettimeofday},
         {"isleep", _l_isleep},
         {"netbytes2uint32", _netbytes2uint32},
         {"uint322netbytes", _uint322netbytes},
+        {"encrypt_key", _encrypt_key},
         {NULL, NULL},
     };
 

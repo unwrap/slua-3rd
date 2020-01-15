@@ -39,8 +39,6 @@ LOCAL_SRC_FILES :=  ../../slua.c \
                     ../../luasocket/timeout.c \
                     ../../luasocket/udp.c \
                     ../../luasocket/usocket.c \
-                    ../../xxtea/xxtea.c \
-                    ../../xxtea/lua_xxtea.c \
                      
 LOCAL_WHOLE_STATIC_LIBRARIES += libluajit
 include $(BUILD_SHARED_LIBRARY)

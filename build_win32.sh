@@ -37,8 +37,6 @@ gcc -m32 -O2 -std=gnu99 -shared \
     luasocket/timeout.c \
     luasocket/udp.c \
     luasocket/wsocket.c \
-    xxtea/xxtea.c \
-    xxtea/lua_xxtea.c \
     -o window/x86/slua.dll \
     -I./ \
     -Iluajit-2.1.0-beta3/src \
