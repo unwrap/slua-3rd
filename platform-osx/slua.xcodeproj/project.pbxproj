@@ -33,6 +33,7 @@
 		7BD5492B21F32353009D3A79 /* fpconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5492621F32353009D3A79 /* fpconv.c */; };
 		7BD5495621F323C0009D3A79 /* lpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5495521F323C0009D3A79 /* lpeg.c */; };
 		7BD5495921F32412009D3A79 /* snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5495821F32412009D3A79 /* snapshot.c */; };
+		7BD5495D23CEE6FB009D3A79 /* lutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5495C23CEE6FB009D3A79 /* lutil.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		7BD5495421F323BF009D3A79 /* lpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lpeg.h; path = ../lpeg.h; sourceTree = "<group>"; };
 		7BD5495521F323C0009D3A79 /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../lpeg.c; sourceTree = "<group>"; };
 		7BD5495821F32412009D3A79 /* snapshot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = snapshot.c; path = ../snapshot.c; sourceTree = "<group>"; };
+		7BD5495C23CEE6FB009D3A79 /* lutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lutil.c; path = ../lutil.c; sourceTree = "<group>"; };
 		E80919D41B745519008FED27 /* slua.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slua.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80919D81B745519008FED27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +166,7 @@
 		E80919CB1B745519008FED27 = {
 			isa = PBXGroup;
 			children = (
+				7BD5495C23CEE6FB009D3A79 /* lutil.c */,
 				0EE3CDD223A3DFFE00EAB9DD /* ikcp.c */,
 				0EE3CDD423A3E00600EAB9DD /* ikcp.h */,
 				0EE3CDD023A3DFF800EAB9DD /* lkcp.c */,
@@ -288,6 +291,7 @@
 				7BD5490E21F31DEC009D3A79 /* auxiliar.c in Sources */,
 				7BD5491421F31DEC009D3A79 /* except.c in Sources */,
 				0EE3CDCD23A3DFC900EAB9DD /* bit.c in Sources */,
+				7BD5495D23CEE6FB009D3A79 /* lutil.c in Sources */,
 				7BD5490A21F31DEC009D3A79 /* inet.c in Sources */,
 				49A357121BA0392800A0FA50 /* main.c in Sources */,
 				7BD5495621F323C0009D3A79 /* lpeg.c in Sources */,
